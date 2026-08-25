@@ -1,6 +1,11 @@
 nome da equipe: Quarteto Fantástico
+
+
 tema: arco irís
-líder: Geovana
+
+
+líder: Geovana  202603656934
+
 NOMES:
 Geovana Moreira,   202603656934,   Geovana28 (usuário do GitHub)
 Gabrielle Goulart, 202603062007,   GabrielleGoulart (usuário do GitHub)
