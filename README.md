@@ -13,6 +13,9 @@ Geovana Moreira,   202603656934,   Geovana28 (usuário do GitHub)
 Gabrielle Goulart, 202603062007,   GabrielleGoulart (usuário do GitHub)
 
 
+Angelina Damasceno,  202602060418
+Angesty (usuário do GitHub)
+
 Maria Eduarda,     202601547003,   Mariaeduarda137 (usuário do GitHub)
 
 
