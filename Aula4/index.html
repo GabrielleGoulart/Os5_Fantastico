@@ -1,132 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <!-- 1. PÁGINA (Estrutura base: html, head, body) -->
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Light blue */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .register-container {
-            background-color: #ffffff; /* White */
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-            text-align: center;
-        }
-        .register-container h2 {
-            color: #4682b4; /* Steel blue for heading */
-            margin-bottom: 25px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-            font-weight: bold;
-        }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #add8e6; /* Light blue border */
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-        .form-group input[type="text"]:focus,
-        .form-group input[type="email"]:focus,
-        .form-group input[type="password"]:focus {
-            outline: none;
-            border-color: #4682b4; /* Darker blue on focus */
-            box-shadow: 0 0 5px rgba(70, 130, 180, 0.5);
-        }
-        .register-button {
-            background-color: #87cefa; /* Light sky blue */
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 18px;
-            width: 100%;
-            transition: background-color 0.3s ease;
-            margin-top: 15px;
-        }
-        .register-button:hover {
-            background-color: #4682b4; /* Steel blue on hover */
-        }
-        .login-link {
-            margin-top: 20px;
-            font-size: 14px;
-        }
-        .login-link a {
-            color: #4682b4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .login-link a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="register-container">
-        <h2>Crie sua Conta!</h2>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+    <title>Reserva — Hotel Serra Azul</title>
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+
+    <!-- 2. CABEÇALHO -->
+    <header>
+      <h1>Hotel Serra Azul</h1>
+      <p>Faça a sua reserva. A ficha de check-in, agora digital.</p>
+    </header>
+
+    <!-- 3. CONTEÚDO (Início do main, englobando tudo o que é o miolo da página) -->
+    <main>
+      
+      <!-- 4. TABELA (Nova seção adicionada para o 6º integrante) -->
+      <section>
+        <h2>Nossas Acomodações</h2>
+        <p>Confira os valores das nossas diárias antes de fazer sua reserva:</p>
+        <table border="1" style="width: 100%; text-align: left; margin-bottom: 20px; border-collapse: collapse;">
+          <caption>Tabela de preços por tipo de quarto</caption>
+          <thead>
+            <tr>
+              <th style="padding: 8px;">Categoria / Quarto</th>
+              <th style="padding: 8px;">Capacidade</th>
+              <th style="padding: 8px;">Valor (Por Noite)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 8px;">Standard — Solteiro</td>
+              <td style="padding: 8px;">1 Hóspede</td>
+              <td style="padding: 8px;">R$ 180,00</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">Standard — Duplo</td>
+              <td style="padding: 8px;">2 Hóspedes</td>
+              <td style="padding: 8px;">R$ 260,00</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">Superior — Suíte</td>
+              <td style="padding: 8px;">Até 4 Hóspedes</td>
+              <td style="padding: 8px;">R$ 390,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 5. FORMULÁRIO -->
+      <section>
+        <h2>Formulário de reserva</h2>
+        <form action="reserva.php" method="post">
+          <fieldset>
+            <legend>Dados do hóspede</legend>
+            <div>
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="como está no documento" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="seuemail@example.com" required>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required>
             </div>
-            <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" placeholder="****" required>
+            <div>
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999">
             </div>
-            <div class="form-group">
-                <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX" required>
+            <fieldset>
+              <legend>Sexo</legend>
+              <div>
+                <input type="radio" id="sexo-f" name="sexo" value="F" checked>
+                <label for="sexo-f">Feminino</label>
+              </div>
+              <div>
+                <input type="radio" id="sexo-m" name="sexo" value="M">
+                <label for="sexo-m">Masculino</label>
+              </div>
+              <div>
+                <input type="radio" id="sexo-n" name="sexo" value="N">
+                <label for="sexo-n">Prefiro não informar</label>
+              </div>
+            </fieldset>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dados da reserva</legend>
+            <div>
+              <label for="chegada">Data de chegada</label>
+              <input type="date" id="chegada" name="chegada" required>
             </div>
-            <div class="form-group">
-                <label for="address">Endereço:</label>
-                <input type="text" id="address" name="address" placeholder="Rua, Avenida, etc." required>
+            <div>
+              <label for="noites">Número de noites</label>
+              <input type="number" id="noites" name="noites" min="1" max="30" value="1" required>
             </div>
-            <div class="form-group">
-                <label for="number">Número:</label>
-                <input type="text" id="number" name="number" placeholder="Ex: 123" required>
+            <div>
+              <label for="hospedes">Número de hóspedes</label>
+              <input type="number" id="hospedes" name="hospedes" min="1" max="6" value="1" required>
             </div>
-            <div class="form-group">
-                <label for="neighborhood">Bairro:</label>
-                <input type="text" id="neighborhood" name="neighborhood" placeholder="Seu bairro" required>
+            <div>
+              <label for="quarto">Tipo de quarto</label>
+              <select id="quarto" name="quarto">
+                <optgroup label="Standard">
+                  <option value="solteiro">Solteiro — R$ 180 a noite</option>
+                  <option value="duplo" selected>Duplo — R$ 260 a noite</option>
+                </optgroup>
+                <optgroup label="Superior">
+                  <option value="suite">Suíte — R$ 390 a noite</option>
+                </optgroup>
+              </select>
             </div>
-            <div class="form-group">
-                <label for="city">Cidade:</label>
-                <input type="text" id="city" name="city" placeholder="Sua cidade" required>
+            <div>
+              <label for="total">Total estimado</label>
+              <output id="total" name="total">R$ 0,00</output>
             </div>
-            <div class="form-group">
-                <label for="state">Estado:</label>
-                <input type="text" id="state" name="state" placeholder="Seu estado" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Mais alguma coisa?</legend>
+            <div>
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Horário previsto de chegada, pedidos especiais…"></textarea>
             </div>
-            <button type="submit" class="register-button">Cadastrar</button>
+            <div>
+              <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+              <label for="newsletter">Quero receber novidades e promoções por e-mail</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Reservar</button>
+            <button type="reset">Limpar</button>
+          </div>
         </form>
-        <div class="login-link">
-            Já tem uma conta? <a href="index.html">Faça login aqui</a>
-        </div>
-    </div>
-</body>
+      </section>
+
+    </main>
+    <!-- Fim do conteúdo principal -->
+
+    <!-- 6. RODAPÉ -->
+    <footer>
+      <p>
+        ARA0062 &middot; Aula 04 &middot; o HTML é o da aula 03. O que mudou está
+        em <code>css/formulario.css</code> — e o campo em foco agora se anuncia.
+      </p>
+    </footer>
+
+  </body>
 </html>
