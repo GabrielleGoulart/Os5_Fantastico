@@ -7,10 +7,12 @@
    ========================================================= */
 
    /* =========================================================
-   PARTE 1, 2 e 4 - Desenvolvido por: [Gabriel Ferraz]
+   PARTE 1, 2  - Desenvolvido por: [Gabriel Ferraz]
    ========================================================= */
 
-/* --- 1. PÁGINA (Estrutura base) --- */
+/* =========================================================
+   PARTE 1: PÁGINA (ESTRUTURA BASE)
+   ========================================================= */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
@@ -28,7 +30,10 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* --- 2. CABEÇALHO --- */
+
+/* =========================================================
+   PARTE 2: CABEÇALHO
+   ========================================================= */
 header {
   max-width: 900px;
   margin: 0 auto 20px auto;
@@ -50,52 +55,4 @@ header p {
   margin: 0;
   font-size: 1.1rem;
   opacity: 0.9;
-}
-
-/* --- 4. TABELA --- */
-section h2 {
-  color: #1a365d;
-  font-size: 1.5rem;
-  margin-top: 0;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 8px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  overflow: hidden;
-  text-align: left;
-}
-
-caption {
-  font-size: 0.9rem;
-  color: #666666;
-  margin-bottom: 8px;
-  text-align: left;
-  font-style: italic;
-}
-
-thead {
-  background-color: #2b6cb0;
-  color: #ffffff;
-}
-
-th, td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #e2e8f0;
-  font-size: 0.95rem;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f7fafc;
-}
-
-tbody tr:hover {
-  background-color: #edf2f7;
 }
