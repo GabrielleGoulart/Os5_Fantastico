@@ -1,22 +1,37 @@
-nome da equipe: Quarteto Fantástico
 
+<div align="center">
 
-tema: arco irís
+# 🌈 Quarteto Fantástico
 
+> *Projeto desenvolvido para a disciplina / atividade acadêmica.*
 
-líder: Geovana  202603656934
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue?style=for-the-badge)
+![Tema](https://img.shields.io/badge/Tema-Arco--%C3%8Dris-ff69b4?style=for-the-badge)
 
-NOMES:
-Geovana Moreira,   202603656934,   Geovana28 (usuário do GitHub)
+</div>
 
+---
 
-Gabrielle Goulart, 202603062007,   GabrielleGoulart (usuário do GitHub)
+## 👥 Integrantes da Equipe
 
+| Foto | Nome | Matrícula | Função | GitHub |
+| :---: | :--- | :---: | :---: | :--- |
+| <img src="https://github.com/Geovana28.png" width="45px" style="border-radius:50%"> | **Geovana Moreira** | `202603656934` | 👑 **Líder** | [@Geovana28](https://github.com/Geovana28) |
+| <img src="https://github.com/Angesty.png" width="45px" style="border-radius:50%"> | **Angelina Damasceno** | `202602060418` | Membro | [@Angesty](https://github.com/Angesty) |
+| <img src="https://github.com/GabrielleGoulart.png" width="45px" style="border-radius:50%"> | **Gabrielle Goulart** | `202603062007` | Membro | [@GabrielleGoulart](https://github.com/GabrielleGoulart) |
+| <img src="https://github.com/Mariaeduarda137.png" width="45px" style="border-radius:50%"> | **Maria Eduarda** | `202601547003` | Membro | [@Mariaeduarda137](https://github.com/Mariaeduarda137) |
+| <img src="https://github.com/Devfrzz.png" width="45px" style="border-radius:50%"> | **Gabriel Ferraz** | `202601484478` | Membro | [@Devfrzz](https://github.com/Devfrzz) |
 
-Angelina Damasceno,  202602060418
-Angesty (usuário do GitHub)
+---
 
-Maria Eduarda,     202601547003,   Mariaeduarda137 (usuário do GitHub)
+## 🎨 Sobre o Tema
+* **Tema Principal:** Arco-íris 🌈
+* **Descrição:** 
 
+---
 
-Gabriel Ferraz     202601484478,   Devfrzz (usuário do GitHub)
+<div align="center">
+
+Feito com 💜 pela equipe **Os5_Fantastico**
+
+</div>
