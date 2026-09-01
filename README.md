@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🌈 Quarteto Fantástico
+# 🌈 Os5_Fantastico
 
 > *Projeto desenvolvido para a disciplina / atividade acadêmica.*
 
